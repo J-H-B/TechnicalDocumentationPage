@@ -1,0 +1,157 @@
+body,html{
+	margin: 0;
+	padding:0;
+	font-family: 'Open Sans',Arial,sans-serif;
+	line-height: 1.5em;
+}
+
+body{
+	width: 100%;
+	margin: auto;
+}
+
+.container{
+	width: 100%;
+}
+
+
+/*----HEADER----*/
+header{
+	margin: 0;
+	padding: 0;
+}
+header h2{
+	margin: 10px auto;
+	background-color: #fff;
+    height: 30px;
+    padding-top: 10px;
+}
+
+#navbar ul{
+	margin: 20px auto 0 auto;
+	padding: 0;
+	border: 2px solid #333;
+	overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar li{
+	list-style: none;
+	padding: 10px 40px;
+	text-align: left;
+	border-bottom: 1px solid #000;
+}
+
+#navbar a{
+	text-decoration: none;
+	color: #666;
+	font-size: 16px;
+}
+
+/*----MAIN----*/
+#Introduction h1, #What_you_should_already_know h1, #Javascript_and_Java h1,
+#Hello_World h1{
+	padding-left: 35px;
+	font-weight: lighter;
+	font-size: 2em;
+}
+
+#What_you_should_already_know h1{
+	padding-right: 4px;
+	font-size: 1.9em;
+}
+
+#Introduction p, #What_you_should_already_know p, #Javascript_and_Java p,
+#Hello_World p{
+	padding-left: 50px;
+	padding-right: 25px;
+	text-align: justify;
+	color: #666;
+}
+
+#Introduction ul, #What_you_should_already_know ul{
+	margin-left: 40px;
+}
+
+#Introduction li, #What_you_should_already_know li{
+	margin-right: 15px;
+	padding-right: 15px;
+	margin-bottom: 10px;
+	margin-right: 30px;	
+}
+
+#Introduction li span, #What_you_should_already_know li span{
+	text-align: justify;
+	position: relative;
+	left: 5px;
+	padding-right: 10px;
+	color: #666;	
+}
+
+#intro-alignment, #wysak-alignment, #jsajv-alignment, #helloworld_alignment{
+	margin-left: 10px;
+}
+
+#Hello_World code{
+	display: block;
+	font-family: monospace;
+	position: relative;
+	text-align: left;
+	white-space: pre;
+	line-height: 2;
+	background-color: #f7f7f7;
+	margin: 10px 20px 10px 50px;
+	padding: 10px 10px 10px 20px;
+	border-radius: 0.5em;
+	color: #000;
+}
+
+
+/*----MEDIA QUERIES----*/
+@media only screen and (min-width: 1023px){
+	/*----MAIN----*/
+	#Introduction p,#What_you_should_already_know p, #Javascript_and_Java p,
+	#Hello_World p{
+		padding-right: 50px;
+	}
+	#Hello_World code{
+		margin-right: 45px;
+	}
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 815px) {
+	/*----HEADER----*/
+	header h2{
+    	text-align: center;
+	}
+	#nav-width{
+		flex-basis: 100%;
+    	max-width: 100%;
+	}
+
+}
+
+@media screen and (min-width: 816px) and (max-width: 1023px){
+	/*----MAIN----*/
+	#main-width{
+		max-width: 60%;
+		flex-basis: 60%;
+	}
+	#Introduction p, #What_you_should_already_know p, #Javascript_and_Java p,
+	#Hello_World p{
+		padding-right: 0px;
+	}
+
+	#Hello_World code{
+		margin-right: 0;
+	}
+
+
+	footer{
+		clear: both;
+	}
+}
+
+
