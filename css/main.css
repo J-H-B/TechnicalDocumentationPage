@@ -63,7 +63,8 @@ header h2{
 }
 
 #Introduction h1, #What_you_should_already_know h1, #Javascript_and_Java h1,
-#Hello_World h1, #Variables h1, #Declaring_Variables h1, #Variable_Scope h1{
+#Hello_World h1, #Variables h1, #Declaring_Variables h1, #Variable_Scope h1,
+#Global_Variables h1, #Constants h1{
 	padding-left: 35px;
 	font-weight: lighter;
 	font-size: 2em;
@@ -75,7 +76,8 @@ header h2{
 }
 
 #Introduction p, #What_you_should_already_know p, #Javascript_and_Java p,
-#Hello_World p, #Variables p, #Declaring_Variables p, #Variable_Scope p{
+#Hello_World p, #Variables p, #Declaring_Variables p, #Variable_Scope p,
+#Global_Variables p, #Constants p{
 	padding-left: 50px;
 	padding-right: 50px;
 	text-align: justify;
@@ -102,11 +104,13 @@ header h2{
 }
 
 #intro-alignment, #wysak-alignment, #jsajv-alignment, #helloworld_alignment,
-#variables-alignment, #declareVariables-alignment, #variableScope-alignment{
+#variables-alignment, #declareVariables-alignment, #variableScope-alignment,
+#globalVariables-alignment, #constants-alignment{
 	margin-left: 10px;
 }
 
-#Hello_World code, #Declaring_Variables code, #Variable_Scope code{
+#Hello_World code, #Declaring_Variables code, #Variable_Scope code, 
+#Constants code{
 	display: block;
 	font-family: monospace;
 	position: relative;
@@ -152,23 +156,32 @@ header h2{
 		flex-basis: 70%;*/
 	}
 	#intro-alignment, #wysak-alignment, #jsajv-alignment, #helloworld_alignment,
-	#variables-alignment, #declareVariables-alignment, #variableScope-alignment{
+	#variables-alignment, #declareVariables-alignment, #variableScope-alignment,
+	#globalVariables-alignment, #constants-alignment{
 		margin-left: 0;
 	}
 
 	#Introduction h1,#What_you_should_already_know h1, #Javascript_and_Java h1,
-	#Hello_World h1, #Variables h1, #Declaring_Variables h1, #Variable_Scope h1{
+	#Hello_World h1, #Variables h1, #Declaring_Variables h1, #Variable_Scope h1,
+	#Global_Variables h1, #Constants h1{
 		padding-left: 0;
 	}
 
+	#Introduction ul, #What_you_should_already_know ul{
+		margin-left: 5px;
+		padding-right: 35px;
+	}
 
 	#Introduction p,#What_you_should_already_know p, #Javascript_and_Java p,
-	#Hello_World p, #Variables p, #Declaring_Variables p, #Variable_Scope p{
-		padding-right: 50px;
+	#Hello_World p, #Variables p, #Declaring_Variables p, #Variable_Scope p,
+	#Global_Variables p, #Constants p{
+		padding-right: 70px;
 		padding-left: 10px;
 	}
-	#Hello_World code, #Declaring_Variables code, #Variable_Scope code{
-		margin-right: 45px;
+	#Hello_World code, #Declaring_Variables code, #Variable_Scope code,
+	#Constants code{
+		margin-right: 65px;
+		margin-left: 5px;
 	}
 
 }
@@ -216,11 +229,13 @@ header h2{
 		
 	}
 	#Introduction p, #What_you_should_already_know p, #Javascript_and_Java p,
-	#Hello_World p, #Variables p, #Declaring_Variables p, #Variable_Scope p{
+	#Hello_World p, #Variables p, #Declaring_Variables p, #Variable_Scope p,
+	#Global_Variables p, #Constants p{
 		padding-right: 0px;
 	}
 
-	#Hello_World code, #Declaring_Variables code, #Variable_Scope code{
+	#Hello_World code, #Declaring_Variables code, #Variable_Scope code,
+	#Constants code{
 		margin-right: 0;
 	}
 
