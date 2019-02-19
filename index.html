@@ -32,6 +32,33 @@
 							<li>
 								<a href="#Variables">Variables</a>
 							</li>
+							<li>
+								<a href="#Declaring_Variables">Declaring Variables</a>
+							</li>
+							<li>
+								<a href="#Variable_Scope">Variable Scope</a>
+							</li>
+							<li>
+								<a href="#Global_Variables">Global Variables</a>
+							</li>
+							<li>
+								<a href="#Constants">Constants</a>
+							</li>
+							<li>
+								<a href="#Data_Types">Data Types</a>
+							</li>
+							<li>
+								<a href="#If_Else_Statement">If...Else Statement</a>
+							</li>
+							<li>
+								<a href="#While_Statement">While Statement</a>
+							</li>
+							<li>
+								<a href="#Function_Declaration">Function Declaration</a>
+							</li>
+							<li>
+								<a href="#Reference">Reference</a>
+							</li>
 						</ul>
 					</nav>
 				</header>
@@ -136,6 +163,77 @@ greetMe("World");</code>
 											<p>
 												Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!
 											</p>
+										</div>
+									</div>
+								</div>
+							</section>
+							<!-- Variables -->
+							<section class="main-section" id = "Variables">
+								<div class="container">
+									<div class="row start-xs start-sm start-md start-lg">
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id = "variable-alignment">
+											<h1>Variables</h1>
+											<p>
+												You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
+											</p>
+											<p>
+												A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).
+											</p>
+											<p>
+												You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.
+											</p>
+										</div>
+									</div>
+								</div>
+							</section>
+							<!-- Declaring Variables -->
+							<section class="main-section" id = "Declaring_Variables">
+								<div class="container">
+									<div class="row start-xs start-sm start-md start-lg">
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id = "declareVariables-alignment">
+											<h1>Declaring Variables</h1>
+											<p>
+												You can declare a variable in three ways:
+											</p>
+											<p>
+												With the keyword var. For example,
+											</p><code>x = 42.</code>
+											<p>
+												This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.
+											</p>
+											<p>
+												With the keyword let. For example,
+											</p><code> let y = 13.</code>
+											<p>
+												This syntax can be used to declare a block scope local variable. See Variable scope below.
+											</p>
+										</div>
+									</div>
+								</div>
+							</section>
+							<!-- Variable Scope -->
+							<section class="main-section" id = "Variable_Scope">
+								<div class="container">
+									<div class="row start-xs start-sm start-md start-lg">
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id = "variableScope-alignment">
+											<h1>Variable Scope</h1>
+											<p>
+												When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.
+											</p>
+											<p>
+												JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.
+											</p><code>if (true) {
+  var x = 5;
+}
+console.log(x);  // 5</code>
+											<p>
+												This behavior changes, when using the let declaration introduced in ECMAScript 2015.
+											</p>
+											<code>if (true) {
+  let y = 5;
+}
+console.log(y);  
+// ReferenceError: y is not defined</code>
 										</div>
 									</div>
 								</div>
