@@ -14,18 +14,27 @@ body{
 	width: 100%;
 }
 
+#wrapper{
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+}
 
 /*----HEADER----*/
-header{
+#nav-width{
+	padding: 0;
+}
+
+#header{
 	margin: 0;
 	padding: 0;
 	position: absolute;
 	top: 0;
-	width: 100%;
+	width: 100vw;
 	max-height: 275px;
 	background-color: #fff;
 }
-header h2{
+#header h2{
 	margin: 10px auto;
 	background-color: #fff;
     height: 30px;
@@ -39,7 +48,6 @@ header h2{
 	margin: 20px auto 0 auto;
 	padding: 0;
 	border: 2px solid #333;
-	border-left: 2px solid #333;
 	overflow-y: auto;
     overflow-x: hidden;
 }
@@ -49,6 +57,7 @@ header h2{
 	padding: 10px 50px;
 	text-align: left;
 	border-bottom: 1px solid #000;
+	border-left: 3px solid #333;
 }
 
 #navbar a{
@@ -56,39 +65,47 @@ header h2{
 	color: #666;
 	font-size: 16px;
 }
+#navbar a:hover{
+	color: #0564B5;
+	font-size: 18px;
+}
 
 /*----MAIN----*/
 #main-width{
-	margin-top: 310px;
+	margin-top: 330px;
 }
 
-#Introduction h1, #What_you_should_already_know h1, #Javascript_and_Java h1,
-#Hello_World h1, #Variables h1, #Declaring_Variables h1, #Variable_Scope h1,
-#Global_Variables h1, #Constants h1{
+#Introduction header, #What_you_should_already_know header, #Javascript_and_Java header,
+#Hello_World header, #Variables header, #Declaring_Variables header, #Variable_Scope header,
+#Global_Variables header, #Constants header, #Data_Types header, #If_Else_Statement header,
+#While_Statement header, #Function_Declaration header, #Reference header{
 	padding-left: 35px;
 	font-weight: lighter;
 	font-size: 2em;
 }
 
-#What_you_should_already_know h1{
+#What_you_should_already_know header{
 	padding-right: 4px;
 	font-size: 1.9em;
 }
 
 #Introduction p, #What_you_should_already_know p, #Javascript_and_Java p,
 #Hello_World p, #Variables p, #Declaring_Variables p, #Variable_Scope p,
-#Global_Variables p, #Constants p{
+#Global_Variables p, #Constants p, #Data_Types p, #If_Else_Statement p, 
+#While_Statement p, #Function_Declaration p, #Reference p{
 	padding-left: 50px;
 	padding-right: 50px;
 	text-align: justify;
 	color: #666;
 }
 
-#Introduction ul, #What_you_should_already_know ul{
+#Introduction ul, #What_you_should_already_know ul, #Data_Types ul,
+#While_Statement ul, #Function_Declaration ul{
 	margin-left: 40px;
 }
 
-#Introduction li, #What_you_should_already_know li{
+#Introduction li, #What_you_should_already_know li, #Data_Types li,
+#While_Statement li, #Function_Declaration li{
 	margin-right: 15px;
 	padding-right: 15px;
 	margin-bottom: 10px;
@@ -103,14 +120,11 @@ header h2{
 	color: #666;	
 }
 
-#intro-alignment, #wysak-alignment, #jsajv-alignment, #helloworld_alignment,
-#variables-alignment, #declareVariables-alignment, #variableScope-alignment,
-#globalVariables-alignment, #constants-alignment{
+.alignment{
 	margin-left: 10px;
 }
 
-#Hello_World code, #Declaring_Variables code, #Variable_Scope code, 
-#Constants code{
+.code{
 	display: block;
 	font-family: monospace;
 	position: relative;
@@ -121,14 +135,22 @@ header h2{
 	margin: 10px 40px 10px 50px;
 	padding: 10px 10px 10px 20px;
 	border-radius: 0.5em;
-	color: #000;
+	color: #0569BF;
+}
+
+#dataTypes-top{
+	padding-top: 7px;
+}
+
+#Reference{
+	margin-bottom: 50vw;
 }
 
 
 /*----MEDIA QUERIES----*/
 @media only screen and (min-width: 1023px){
 	/*----HEADER----*/	
-	header{
+	#header{
 		min-width: 310px;
 		width: 320px;
 		margin: 0 ;
@@ -139,7 +161,7 @@ header h2{
 		background-color: #fff;
 		border-right: solid #aaa;
 	}
-	header h2{
+	#header h2{
 		text-align: center;
 	}
 	#navbar ul{
@@ -151,35 +173,33 @@ header h2{
 
 	/*----MAIN----*/
 	#main-width{
-		margin: 0;
-		/*max-width: 60%;
-		flex-basis: 70%;*/
+		margin-top: 30px;
 	}
-	#intro-alignment, #wysak-alignment, #jsajv-alignment, #helloworld_alignment,
-	#variables-alignment, #declareVariables-alignment, #variableScope-alignment,
-	#globalVariables-alignment, #constants-alignment{
+	.alignment{
 		margin-left: 0;
 	}
 
-	#Introduction h1,#What_you_should_already_know h1, #Javascript_and_Java h1,
-	#Hello_World h1, #Variables h1, #Declaring_Variables h1, #Variable_Scope h1,
-	#Global_Variables h1, #Constants h1{
+	#Introduction header,#What_you_should_already_know header, #Javascript_and_Java header,
+	#Hello_World header, #Variables header, #Declaring_Variables header, #Variable_Scope header,
+	#Global_Variables header, #Constants header, #Data_Types header, #If_Else_Statement header,
+	#While_Statement header, #Function_Declaration header, #Reference header{
 		padding-left: 0;
 	}
 
-	#Introduction ul, #What_you_should_already_know ul{
+	#Introduction ul, #What_you_should_already_know ul, #Data_Types ul,
+	#While_Statement ul, #Function_Declaration ul{
 		margin-left: 5px;
 		padding-right: 35px;
 	}
 
 	#Introduction p,#What_you_should_already_know p, #Javascript_and_Java p,
 	#Hello_World p, #Variables p, #Declaring_Variables p, #Variable_Scope p,
-	#Global_Variables p, #Constants p{
+	#Global_Variables p, #Constants p, #Data_Types p, #If_Else_Statement p,
+	#While_Statement p, #Function_Declaration p, #Reference p{
 		padding-right: 70px;
 		padding-left: 10px;
 	}
-	#Hello_World code, #Declaring_Variables code, #Variable_Scope code,
-	#Constants code{
+	.code{
 		margin-right: 65px;
 		margin-left: 5px;
 	}
@@ -189,19 +209,18 @@ header h2{
 
 @media only screen and (min-width: 768px) and (max-width: 815px) {
 	/*----HEADER----*/
-	header h2{
+	#header h2{
     	text-align: center;
 	}
 	#nav-width{
 		flex-basis: 100%;
     	max-width: 100%;
 	}
-
 }
 
 @media screen and (min-width: 816px) and (max-width: 1023px){
 	/*----HEADER----*/	
-	header{
+	#header{
 		min-width: 310px;
 		width: 320px;
 		margin: 0 ;
@@ -212,7 +231,7 @@ header h2{
 		background-color: #fff;
 		border-right: solid #aaa;
 	}
-	header h2{
+	#header h2{
 		text-align: center;
 	}
 	#navbar ul{
@@ -225,23 +244,26 @@ header h2{
 	#main-width{
 		max-width: 60%;
 		flex-basis: 60%;
-		margin-top: 0;
+		margin-top: 30px;
+		margin-left: 12px;
 		
 	}
 	#Introduction p, #What_you_should_already_know p, #Javascript_and_Java p,
 	#Hello_World p, #Variables p, #Declaring_Variables p, #Variable_Scope p,
-	#Global_Variables p, #Constants p{
+	#Global_Variables p, #Constants p, #Data_Types p, #If_Else_Statement p, 
+	#While_Statement p, #Function_Declaration p, #Reference p{
 		padding-right: 0px;
 	}
 
-	#Hello_World code, #Declaring_Variables code, #Variable_Scope code,
-	#Constants code{
+	.code{
 		margin-right: 0;
 	}
+}
 
-
-	footer{
-		clear: both;
+@media screen and (min-width: 450px){
+	/*----MAIN----*/
+	#Reference{
+		margin-bottom: 20vw;
 	}
 }
 

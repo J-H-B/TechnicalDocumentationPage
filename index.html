@@ -8,56 +8,56 @@
 </head>
 <body>
 	<!-- WRAPPER -->
-	<div class="container">
-		<div class="row center-xs start-sm start-md start-lg">
+	<div class="container" >
+		<div class="row center-xs start-sm start-md start-lg" >
 			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" id = "nav-width">
 				<!-- HEADER -->
-				<header>
+				<header id = "header">
 					<h2>JS Documentation</h2>	
 					<!--NAVBAR -->
 					<nav id = "navbar">
 						<ul>
 							<li>
-								<a href="#Introduction">Introduction</a>
+								<a class = "nav-link" href="#Introduction">Introduction</a>
 							</li>
 							<li>
-								<a href="#What_you_should_already_know">What you should already know</a>
+								<a class = "nav-link"  href="#What_you_should_already_know">What you should already know</a>
 							</li>
 							<li>
-								<a href="#Javascript_and_Java">JavaScript and Java</a>
+								<a class = "nav-link"  href="#Javascript_and_Java">JavaScript and Java</a>
 							</li>
 							<li>
-								<a href="#Hello_World">Hello World</a>
+								<a class = "nav-link"  href="#Hello_World">Hello World</a>
 							</li>
 							<li>
-								<a href="#Variables">Variables</a>
+								<a class = "nav-link"  href="#Variables">Variables</a>
 							</li>
 							<li>
-								<a href="#Declaring_Variables">Declaring Variables</a>
+								<a class = "nav-link"  href="#Declaring_Variables">Declaring Variables</a>
 							</li>
 							<li>
-								<a href="#Variable_Scope">Variable Scope</a>
+								<a class = "nav-link"  href="#Variable_Scope">Variable Scope</a>
 							</li>
 							<li>
-								<a href="#Global_Variables">Global Variables</a>
+								<a class = "nav-link"  href="#Global_Variables">Global Variables</a>
 							</li>
 							<li>
-								<a href="#Constants">Constants</a>
+								<a class = "nav-link"  href="#Constants">Constants</a>
 							</li>
 							<li>
-								<a href="#Data_Types">Data Types</a>
+								<a class = "nav-link"  href="#Data_Types">Data Types</a>
 							</li>
 							<li>
-								<a href="#If_Else_Statement">If...Else Statement</a>
+								<a class = "nav-link"  href="#If_Else_Statement">If...Else Statement</a>
 							</li>
 							<li>
-								<a href="#While_Statement">While Statement</a>
+								<a class = "nav-link"  href="#While_Statement">While Statement</a>
 							</li>
 							<li>
-								<a href="#Function_Declaration">Function Declaration</a>
+								<a class = "nav-link"  href="#Function_Declaration">Function Declaration</a>
 							</li>
 							<li>
-								<a href="#Reference">Reference</a>
+								<a class = "nav-link"  href="#Reference">Reference</a>
 							</li>
 						</ul>
 					</nav>
@@ -73,8 +73,8 @@
 							<section class="main-section" id = "Introduction">
 								<div class="container">
 									<div class="row start-xs start-sm start-md start-lg">
-										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id = "intro-alignment">
-											<h1>Introduction</h1>
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 alignment">
+											<header>Introduction</header>
 											<p>
 												JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
 											</p>
@@ -101,8 +101,8 @@
 							<section class="main-section" id = "What_you_should_already_know">
 								<div class="container">
 									<div class="row start-xs start-sm start-md start-lg">
-										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id = "wysak-alignment">
-											<h1>What you should already know</h1>
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 alignment">
+											<header>What you should already know</header>
 											<p>
 												This guide assumes you have the following basic background:
 											</p>
@@ -131,8 +131,8 @@
 							<section class="main-section" id = "Javascript_and_Java">
 								<div class="container">
 									<div class="row start-xs start-sm start-md start-lg">
-										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id = "jsajv-alignment">
-											<h1>JavaScript and Java</h1>
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 alignment">
+											<header>JavaScript and Java</header>
 											<p>
 												JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.
 											</p>
@@ -150,12 +150,12 @@
 							<section class="main-section" id = "Hello_World">
 								<div class="container">
 									<div class="row start-xs start-sm start-md start-lg">
-										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id = "helloworld-alignment">
-											<h1>Hello World</h1>
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 alignment">
+											<header>Hello World</header>
 											<p>
 												To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
 
-											</p><code>function greetMe(yourName) {
+											</p><code class = "code">function greetMe(yourName) {
 alert("Hello " + yourName);
 }
 greetMe("World");</code>
@@ -171,8 +171,8 @@ greetMe("World");</code>
 							<section class="main-section" id = "Variables">
 								<div class="container">
 									<div class="row start-xs start-sm start-md start-lg">
-										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id = "variable-alignment">
-											<h1>Variables</h1>
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 alignment">
+											<header>Variables</header>
 											<p>
 												You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
 											</p>
@@ -190,20 +190,20 @@ greetMe("World");</code>
 							<section class="main-section" id = "Declaring_Variables">
 								<div class="container">
 									<div class="row start-xs start-sm start-md start-lg">
-										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id = "declareVariables-alignment">
-											<h1>Declaring Variables</h1>
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 alignment">
+											<header>Declaring Variables</header>
 											<p>
 												You can declare a variable in three ways:
 											</p>
 											<p>
 												With the keyword var. For example,
-											</p><code>x = 42.</code>
+											</p><code class = "code">x = 42.</code>
 											<p>
 												This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.
 											</p>
 											<p>
 												With the keyword let. For example,
-											</p><code> let y = 13.</code>
+											</p><code class = "code"> let y = 13.</code>
 											<p>
 												This syntax can be used to declare a block scope local variable. See Variable scope below.
 											</p>
@@ -215,21 +215,21 @@ greetMe("World");</code>
 							<section class="main-section" id = "Variable_Scope">
 								<div class="container">
 									<div class="row start-xs start-sm start-md start-lg">
-										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id = "variableScope-alignment">
-											<h1>Variable Scope</h1>
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 alignment">
+											<header>Variable Scope</header>
 											<p>
 												When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.
 											</p>
 											<p>
 												JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.
-											</p><code>if (true) {
+											</p><code class = "code">if (true) {
   var x = 5;
 }
 console.log(x);  // 5</code>
 											<p>
 												This behavior changes, when using the let declaration introduced in ECMAScript 2015.
 											</p>
-											<code>if (true) {
+											<code class = "code">if (true) {
   let y = 5;
 }
 console.log(y);  
@@ -242,8 +242,8 @@ console.log(y);
 							<section class="main-section" id = "Global_Variables">
 								<div class="container">
 									<div class="row start-xs start-sm start-md start-lg">
-										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id = "globalVariables-alignment">
-											<h1>Global Variables</h1>
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 alignment">
+											<header>Global Variables</header>
 											<p>
 												Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.
 											</p>
@@ -258,11 +258,11 @@ console.log(y);
 							<section class="main-section" id = "Constants">
 								<div class="container">
 									<div class="row start-xs start-sm start-md start-lg">
-										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id = "constants-alignment">
-											<h1>Constants</h1>
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 alignment">
+											<header>Constants</header>
 											<p>
 												You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.
-											</p><code>const PI = 3.14;</code>
+											</p><code class = "code">const PI = 3.14;</code>
 											<p>
 												A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.
 											</p>
@@ -270,7 +270,7 @@ console.log(y);
 											</p>
 											<p>
 												You cannot declare a constant with the same name as a function or variable in the same scope. For example:
-											</p><code>// THIS WILL CAUSE AN ERROR
+											</p><code class = "code">// THIS WILL CAUSE AN ERROR
 function f() {};
 const f = 5;
 // THIS WILL CAUSE AN ERROR ALSO
@@ -282,8 +282,183 @@ function f() {
 </code>
 											<p>
 												However, object attributes are not protected, so the following statement is executed without problems.
-											</p><code>const MY_OBJECT = {"key": "value"};
+											</p><code class = "code">const MY_OBJECT = {"key": "value"};
 MY_OBJECT.key = "otherValue";</code>
+										</div>
+									</div>
+								</div>
+							</section>
+							<!-- DATA TYPES -->
+							<section class="main-section" id = "Data_Types">
+								<div class="container">
+									<div class="row start-xs start-sm start-md start-lg">
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 alignment">
+											<header>Data Types</header>
+											<p>
+												The latest ECMAScript standard defines seven data types:
+											</p>
+											<ul>
+												<li>Six data types that are primitives:
+													<ul>
+														<li id = "dataTypes-top">Boolean. true and false.</li>
+														<li>null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant.</li>
+														<li>undefined. A top-level property whose value is undefined.</li>
+														<li>Number. 42 or 3.14159.</li>
+														<li>String. "Howdy"</li>
+														<li>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li>
+													</ul>
+												</li>
+												<li>and Object</li>
+											</ul>
+											<p>Although these data types are a relatively small amount, they enable you to perform useful functions with your applications. Objects and functions are the other fundamental elements in the language. You can think of objects as named containers for values, and functions as procedures that your application can perform.</p>
+										</div>
+									</div>
+								</div>
+							</section>
+							<!-- IF ELSE STATEMENT -->
+							<section class="main-section" id = "If_Else_Statement">
+								<div class="container">
+									<div class="row start-xs start-sm start-md start-lg">
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 alignment">
+											<header>If...Else Statement</header>
+											<p>
+												Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:
+											</p><code class = "code">if (condition) {
+  statement_1;
+} else {
+  statement_2;
+}</code>
+											<p>
+												condition can be any expression that evaluates to true or false. See Boolean for an explanation of what evaluates to true and false. If condition evaluates to true, statement_1 is executed; otherwise, statement_2 is executed. statement_1 and statement_2 can be any statement, including further nested if statements.
+											</p>
+											<p>
+												You may also compound the statements using else if to have multiple conditions tested in sequence, as follows:
+											</p>
+											<code class = "code">if (condition_1) {
+  statement_1;
+} else if (condition_2) {
+  statement_2;
+} else if (condition_n) {
+  statement_n;
+} else {
+  statement_last;
+} </code>
+										<p>
+											In the case of multiple conditions only the first logical condition which evaluates to true will be executed. To execute multiple statements, group them within a block statement ({ ... }) . In general, it's good practice to always use block statements, especially when nesting if statements:
+										</p>
+										<code class = "code">if (condition) {
+  statement_1_runs_if_condition_is_true;
+  statement_2_runs_if_condition_is_true;
+} else {
+  statement_3_runs_if_condition_is_false;
+  statement_4_runs_if_condition_is_false;
+}</code>
+										<p>
+											It is advisable to not use simple assignments in a conditional expression, because the assignment can be confused with equality when glancing over the code. For example, do not use the following code:
+
+										</p>
+										<code class = "code">if (x = y) {
+  /* statements here */
+}</code>
+										<p>
+											If you need to use an assignment in a conditional expression, a common practice is to put additional parentheses around the assignment. For example:
+										</p><code class = "code">if ((x = y)) {
+  /* statements here */
+}</code>
+										</div>
+									</div>
+								</div>
+							</section>
+							<!-- WHILE STATEMENT -->
+							<section class="main-section" id = "While_Statement">
+								<div class="container">
+									<div class="row start-xs start-sm start-md start-lg">
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 alignment">
+											<header>While Statement</header>
+											<p>
+												A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:
+											</p><code class = "code">while (condition)
+  statement</code>
+											<p>
+												If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop.
+											</p>
+											<p>
+												The condition test occurs before statement in the loop is executed. If the condition returns true, statement is executed and the condition is tested again. If the condition returns false, execution stops and control is passed to the statement following while.
+											</p>
+											<p>
+												To execute multiple statements, use a block statement ({ ... }) to group those statements.
+											</p>
+											<p>
+												Example: 
+											</p>
+											<p>
+												The following while loop iterates as long as n is less than three:
+											</p>
+											<code class = "code">var n = 0;
+var x = 0;
+while (n < 3) {
+  n++;
+  x += n;
+}</code>
+										<p>
+											With each iteration, the loop increments n and adds that value to x. Therefore, x and n take on the following values:
+										</p>
+										<ul>
+											<li>After the first pass: n = 1 and x = 1</li>
+											<li>After the second pass: n = 2 and x = 3</li>
+											<li>After the third pass: n = 3 and x = 6</li>
+										</ul>
+										<p>
+											After completing the third pass, the condition n < 3 is no longer true, so the loop terminates.
+										</p>
+										</div>
+									</div>
+								</div>
+							</section>
+							<!-- FUNCTION DECLARATION -->
+							<section class="main-section" id = "Function_Declaration">
+								<div class="container">
+									<div class="row start-xs start-sm start-md start-lg">
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 alignment">
+											<header>Function Declaration</header>
+											<p>
+												A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:
+											</p>
+											<ul>
+												<li>The name of the function.</li>
+												<li>
+													A list of arguments to the function, enclosed in parentheses and separated by commas.
+												</li>
+												<li>
+													The JavaScript statements that define the function, enclosed in curly brackets, { }.
+												</li>
+											</ul>
+											<p>
+												For example, the following code defines a simple function named square:
+											</p>
+											<code class = "code">function square(number) {
+  return number * number;
+}</code>
+											<p>
+												The function square takes one argument, called number. The function consists of one statement that says to return the argument of the function (that is, number) multiplied by itself. The return statement specifies the value returned by the function.
+											</p>
+											<code class = "code">return number * number;</code>
+											<p>
+												Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function.
+											</p>
+										</div>
+									</div>
+								</div>
+							</section>
+							<!-- REFERENCE -->
+							<section class="main-section" id = "Reference">
+								<div class="container">
+									<div class="row start-xs start-sm start-md start-lg">
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 alignment" >
+											<header>Reference</header>
+											<p>
+												All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target = "_blank" alt = "Mozilla Reference">MDN</a>
+											</p>
 										</div>
 									</div>
 								</div>
@@ -294,13 +469,6 @@ MY_OBJECT.key = "otherValue";</code>
 			</main>
 		</div>
 	</div>
-
-	
-
-	<!-- FOOTER -->
-	<footer>
-		
-	</footer>
-
+	<script type="text/javascript" src = "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" ></script>  
 </body>
 </html>
