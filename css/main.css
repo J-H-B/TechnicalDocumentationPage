@@ -267,4 +267,11 @@ body{
 	}
 }
 
+@media screen and (max-width: 440px){
+	/*----MAIN----*/
+	#code-small{
+		font-size: 11px;
+	}	
+}
+
 
